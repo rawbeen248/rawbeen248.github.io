@@ -1,0 +1,99 @@
+body {
+    background-color: #000000;
+    color: #000000; 
+    font-family: Arial; 
+}
+
+.aboutme {
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: Arial; 
+}
+
+.aboutme__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.aboutme__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.aboutme__box, .aboutme__box-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 0rem 1rem;
+    width: 100%;
+    background: #A259FF;
+    border-radius: 1rem;
+    color: #000000;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.aboutme__box-small {
+    width: 100%;
+    text-align: center;
+}
+
+.aboutme__box a, .aboutme__box-small a {
+    color: #04c9ff;
+}
+
+.aboutme__box a:hover, .aboutme__box-small a:hover {
+    color: #1900ff;
+}
+
+.expertise-box, .prolang-box, .tools-box {
+    display: grid;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.expertise-item, .prolang-item, .tools-item {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: -1rem;
+}
+
+.expertise-box {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.prolang-box {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tools-box {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutme__box {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.star {
+    color: #FFD700;
+}
+
+@media (max-width: 992px) {
+    .aboutme {
+        max-width: 90%;
+    }
+}

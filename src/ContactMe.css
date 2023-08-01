@@ -1,0 +1,30 @@
+.contact-container {
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.contact-info {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #A259FF;
+}
+
+@media (max-width: 992px) {
+    .column-margin {
+        margin-bottom: 4rem;
+    }
+
+    .contact-container {
+        padding-top: 10rem;
+    }
+}
