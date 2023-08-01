@@ -7,7 +7,7 @@ import './Header.css';
 function Header() {
   return (
     <Navbar expand="lg" className="custom-navbar">
-      <Navbar.Brand className="brand" href="#home">RABINDRA ADHIKARI</Navbar.Brand>
+      <LinkContainer to="/"><Navbar.Brand className="brand">RABINDRA ADHIKARI</Navbar.Brand></LinkContainer>
 
       <Navbar.Toggle className="navbar-toggle smaller-icon" aria-controls="basic-navbar-nav" />
 

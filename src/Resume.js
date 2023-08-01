@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './Header';
 
+
 function Resume() {
-    const fileId = "1sym8cNKufBsrswwnSoCVm1On150TGo7w";
+    const fileId = "1jmisVnpTPCV-C6RKQdgcpYlCLCqTtda7";
     const embedURL = `https://drive.google.com/file/d/${fileId}/preview`;
 
     return (
