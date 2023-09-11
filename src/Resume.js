@@ -3,7 +3,7 @@ import Header from './Header';
 
 
 function Resume() {
-    const fileId = "1jmisVnpTPCV-C6RKQdgcpYlCLCqTtda7";
+    const fileId = "1xKuK56qy2FTDpAQCO7_79z2VdFhiV-ye";
     const embedURL = `https://drive.google.com/file/d/${fileId}/preview`;
 
     return (
@@ -16,7 +16,6 @@ function Resume() {
 }
 
 export default Resume;
-
 
 
 
