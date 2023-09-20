@@ -12,7 +12,8 @@ import house_price_prediction_heatmap from './assets/house_price_prediction_heat
 import kill_them_down from './assets/kill_them_down.png';
 import sql_pie_chart from './assets/sql_pie_chart.png';
 import confusion_matrix_fraud from './assets/confusion_matrix_fraud.png';
-
+import diabetes_3d_scatter_plot from './assets/diabetes.png';
+import homepage_fmdb from './assets/homepage_fmdb.png';
 
 const projectsData = [
   {
@@ -58,6 +59,24 @@ const projectsData = [
     tools: 'Javascript, C#, Unity',
     category: 'Game Development',
     repoLink: 'https://github.com/rawbeen248/fps-game-unity' 
+  },
+
+  {
+    title: 'Football League Database Management System',
+    image: homepage_fmdb,
+    description: 'This is a Football League Database Management System developed using PHP, HTML, CSS, and MySQL. The system allows users to manage and view information about football teams, matches, players, contracts, events, and more.',
+    tools: 'MySQL, PHP, HTML, CSS',
+    category: 'Database Management System',
+    repoLink: 'https://github.com/rawbeen248/football-league-DBMS' 
+  },
+
+  {
+    title: 'Diabetes Detection through Classification',
+    image: diabetes_3d_scatter_plot,
+    description: 'This project aims to classify whether a patient has diabetes based on other health conditions. The objective is to provide insights into which features are most impactful in predicting the disease, as well as to compare the performance of different machine learning algorithms in making the predictions.',
+    tools: 'Scikit-learn, Pandas, Matplotlib, Seaborn, Missingno',
+    category: 'Machine learning, Classification Problem',
+    repoLink: 'https://github.com/rawbeen248/diabetes_classification' 
   },
 
   {
