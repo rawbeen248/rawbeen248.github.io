@@ -13,6 +13,7 @@ const Tools = () => (
         <div className="tools-item">Docker</div>
         <div className="tools-item">Unity</div>
         <div className="tools-item">Microsoft Azure</div>
+        <div className="tools-item">Microsoft Power BI</div>
     </div>
   );
 
@@ -61,13 +62,22 @@ function AboutMe () {
             <FaGraduationCap className="aboutme__icon" />
             <div className="aboutme__section">
                 <div className="aboutme__box">
-                    <p><strong>Bachelor of Computer Science & Artificial Intelligence</strong><br/>IE University - Madrid, Spain</p>
+                    <p><strong>Bachelor of Computer Science & Artificial Intelligence</strong><br/><strong>IE University</strong><br/>Madrid, Spain<br/>September 2020 - June 2024</p>
                 </div>
             </div>
             <FaBriefcase className="aboutme__icon" />
             <div className="aboutme__section">
+
                 <div className="aboutme__box">
-                    <p><strong>Datathon Winner - IE University & Ryan Air</strong><br/> Madrid, Spain</p>
+                    <p><strong>Data Analyst Intern</strong><br/><strong>Infitnity Sevices Private Limited</strong><br/>Kathmandu, Nepal<br/>May 2023 - October 2023</p>
+                </div>
+
+                <div className="aboutme__box">
+                    <p><strong>Datathon Winner</strong><br/><strong>IE University & Ryan Air</strong><br/>Madrid, Spain<br/>October 2022</p>
+                </div>
+
+                <div className="aboutme__box">
+                    <p><strong>Database Solutions Consultant Intern</strong><br/><strong>Black Snow Nepal</strong><br/>Kathmandu, Nepal<br/>June 2022 - August 2022</p>
                 </div>
                 
             </div>
