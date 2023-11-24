@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.489dfdbf.css",
+    "main.js": "/static/js/main.b5181041.js",
+    "static/js/787.c53aefa4.chunk.js": "/static/js/787.c53aefa4.chunk.js",
+    "static/media/yolo.jpg": "/static/media/yolo.f56269390e94bafbda87.jpg",
+    "static/media/pawpal_home_screen.png": "/static/media/pawpal_home_screen.1cda58e1dd84426b9eb4.png",
+    "static/media/diabetes.png": "/static/media/diabetes.d1a329e006555f12955d.png",
+    "static/media/kill_them_down.png": "/static/media/kill_them_down.85b117a742b0f76d7e0c.png",
+    "static/media/house_price_prediction_heatmap.png": "/static/media/house_price_prediction_heatmap.e3ad2b8a8b18e7e60938.png",
+    "static/media/bayesian_network.png": "/static/media/bayesian_network.e8eb38d4522a0d2d9eda.png",
+    "static/media/cloud_of_pos_words.png": "/static/media/cloud_of_pos_words.ac3d6d874f1ccae5339b.png",
+    "static/media/homepage_fmdb.png": "/static/media/homepage_fmdb.b45a89f3809336871686.png",
+    "static/media/sql_pie_chart.png": "/static/media/sql_pie_chart.3923b3e4ad4d014a230a.png",
+    "static/media/travel_reco.png": "/static/media/travel_reco.cf679505f1fd22f2d720.png",
+    "static/media/gin_rummy.png": "/static/media/gin_rummy.cae79e11a494a7936346.png",
+    "static/media/profile_picture.jpg": "/static/media/profile_picture.3e108bf28b7d349b9720.jpg",
+    "static/media/confusion_matrix_fraud.png": "/static/media/confusion_matrix_fraud.26cece341ba46844b84a.png",
+    "index.html": "/index.html",
+    "main.489dfdbf.css.map": "/static/css/main.489dfdbf.css.map",
+    "main.b5181041.js.map": "/static/js/main.b5181041.js.map",
+    "787.c53aefa4.chunk.js.map": "/static/js/787.c53aefa4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.489dfdbf.css",
+    "static/js/main.b5181041.js"
+  ]
+}
