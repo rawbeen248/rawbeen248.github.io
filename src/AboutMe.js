@@ -89,6 +89,9 @@ function AboutMe () {
                 <div className="aboutme__box-small">
                     <p><strong>JavaScript Algorithms and Data Structures <a href="https://www.freecodecamp.org/certification/fcc243a4501-d777-4156-80c3-f9c87c876da6/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">Certification <FaLink /></a></strong> - FreeCodeCamp</p>
                 </div>
+                <div className="aboutme__box-small">
+                    <p><strong>Next Generation Tech Booster Scholarship </strong> - Udacity & Bertelsmann</p>
+                </div>
             </div>
             <FaCogs className="aboutme__icon" />
             <div className="aboutme__section">

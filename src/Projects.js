@@ -17,9 +17,28 @@ import homepage_fmdb from './assets/homepage_fmdb.png';
 import bayesian_network from './assets/bayesian_network.png';
 import pawpal from './assets/pawpal_home_screen.png';
 import travel_reco from './assets/travel_reco.png';
+import animal_sound_classifier from './assets/audio_classification.png';
+import mcq_generator from './assets/mcq_quiz.png';
+import huggingFaceIcon from './assets/hugging_face_icon.png';
 
 
 const projectsData = [
+  {
+    title: 'Animal Sound Classifier',
+    image: animal_sound_classifier,
+    description: 'This project aims to build a model, hubert-finetuned-animals, that is a fine-tuned version of facebook/hubert-base-ls960 specifically for the task of animal sound classification. The model has been trained to identify various animal sounds from a subset of the ESC-50 dataset, focusing exclusively on animal categories.',
+    tools: 'Python, Transformers, Hugging Face, Scikit-learn, Librosa, Torch',
+    category: 'Audio Processing, Fine-Tuning, Sound Classification, Transfer Learning',
+    repoLink: 'https://huggingface.co/ardneebwar/wav2vec2-animal-sounds-finetuned-hubert-finetuned-animals' 
+  },
+  {
+    title: 'MCQ Generator',
+    image: mcq_generator,
+    description: 'This projectaims to build a model, Mistral 7B MCQ Generator, that is a fine-tuned version of the Mistralai/Mistral-7B-v0.1 aimed at generating multiple-choice questions (MCQs) with their correct answers. Developed to aid in educational content creation, this tool is perfect for educators, e-learning content creators, and students preparing for exams.',
+    tools: 'Python, Transformers, Hugging, Face, Torch, NLTK',
+    category: 'Natural Language Processing, Parameter-Efficent Fine-Tuning, Text Generation',
+    repoLink: 'https://huggingface.co/ardneebwar/mistral_7b_mcq_generator' 
+  },
 
   {
     title: 'Bayesian Network for News/Statements Credibility Assessment',
@@ -132,6 +151,7 @@ const projectsData = [
 ];
 
 function Project(props) {
+  const isHuggingFace = props.repoLink.includes('huggingface');
   return (
     <div className="project">
       <img src={props.image} alt={props.title} />
@@ -141,7 +161,12 @@ function Project(props) {
         <p><span>Languages & Libraries: </span>{props.tools}</p>
         <p><span>Category: </span>{props.category}</p>
         <a href={props.repoLink} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} /> Link to the project
+          {isHuggingFace ? (
+            <img src={huggingFaceIcon} alt="Hugging Face" style={{ width: '20px', height: '20px' }} />
+          ) : (
+            <FontAwesomeIcon icon={faGithub} />
+          )}
+          Link to the project
         </a>
       </div>
     </div>
