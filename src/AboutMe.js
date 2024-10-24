@@ -62,11 +62,15 @@ function AboutMe () {
             <FaGraduationCap className="aboutme__icon" />
             <div className="aboutme__section">
                 <div className="aboutme__box">
-                    <p><strong>Bachelor of Computer Science & Artificial Intelligence</strong><br/><strong>IE University</strong><br/>Madrid, Spain<br/>September 2020 - June 2024</p>
+                    <p><strong>Bachelor of Computer Science & Artificial Intelligence</strong><br/><strong>IE University</strong><br/>Madrid, Spain<br/>September 2020 - July 2024</p>
                 </div>
             </div>
             <FaBriefcase className="aboutme__icon" />
             <div className="aboutme__section">
+
+                <div className="aboutme__box">
+                    <p><strong>AI Data Annotator</strong><br/><strong>Data Annotation Tech</strong><br/>Madrid, Spain<br/>February 2024 - July 2024</p>
+                </div>
 
                 <div className="aboutme__box">
                     <p><strong>Data Analyst Intern</strong><br/><strong>Infitnity Sevices Private Limited</strong><br/>Kathmandu, Nepal<br/>May 2023 - October 2023</p>

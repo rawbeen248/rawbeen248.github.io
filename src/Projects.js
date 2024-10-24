@@ -1,5 +1,5 @@
 import React from "react";
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from './Header';
 import './Projects.css'
@@ -20,9 +20,19 @@ import travel_reco from './assets/travel_reco.png';
 import animal_sound_classifier from './assets/audio_classification.png';
 import mcq_generator from './assets/mcq_quiz.png';
 import huggingFaceIcon from './assets/hugging_face_icon.png';
+import AALP from './assets/AALP.png';
 
 
 const projectsData = [
+
+  {
+    title: 'Advanced Automated Lecture Processing (AALP)',
+    image: AALP,
+    description: 'This project develops an advanced automated lecture processing (AALP) tool that leverages state-of-the-art machine learning models to enhance the educational experience through automated video summarization and interactive learning features.',
+    tools: 'Python, JavaScript, FastAPI, Transformers, Hugging Face',
+    category: 'Automatic Speech Recognition, Machine Translation, Content Generation, Text Summarization, Video Summarization, Fine-Tuning',
+    repoLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7212179230141386752/' 
+  },
   {
     title: 'Animal Sound Classifier',
     image: animal_sound_classifier,
@@ -152,6 +162,8 @@ const projectsData = [
 
 function Project(props) {
   const isHuggingFace = props.repoLink.includes('huggingface');
+  const isLinkedIn = props.repoLink.includes('linkedin');
+
   return (
     <div className="project">
       <img src={props.image} alt={props.title} />
@@ -163,8 +175,10 @@ function Project(props) {
         <a href={props.repoLink} target="_blank" rel="noopener noreferrer">
           {isHuggingFace ? (
             <img src={huggingFaceIcon} alt="Hugging Face" style={{ width: '20px', height: '20px' }} />
+          ) : isLinkedIn ? (
+            <FontAwesomeIcon icon={faLinkedin} style={{ width: '20px', height: '20px' }} />
           ) : (
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} style={{ width: '20px', height: '20px' }} />
           )}
           Link to the project
         </a>

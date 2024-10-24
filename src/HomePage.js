@@ -14,7 +14,7 @@ function HomePage() {
           <img className="profile-image" src={profilePicture} alt="Rabindra Adhikari" />
         </div>
         <div className="description">
-          <h4>Hello World!</h4><br/> <h2>I'm Rabindra</h2> <br/><span>a final-year Computer Science and Artificial Intelligence student passionate about data science and machine learning.</span>
+          <h4>Hello World!</h4><br/> <h2>I'm Rabindra</h2> <br/><span>a recent graduate with a Bachelor's in Computer Science and Artificial Intelligence, passionate about data science and machine learning.</span>
           <br/><br/>
           <LinkContainer to="/projects">
             <Button className="custom-button" >VIEW PROJECTS</Button>
