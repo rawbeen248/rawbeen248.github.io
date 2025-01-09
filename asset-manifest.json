@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.489dfdbf.css",
-    "main.js": "/static/js/main.2117e06c.js",
+    "main.js": "/static/js/main.15a10b4d.js",
     "static/js/787.c53aefa4.chunk.js": "/static/js/787.c53aefa4.chunk.js",
     "static/media/audio_classification.png": "/static/media/audio_classification.e0c3caa2b1b9bfc96012.png",
     "static/media/yolo.jpg": "/static/media/yolo.f56269390e94bafbda87.jpg",
@@ -14,19 +14,19 @@
     "static/media/hugging_face_icon.png": "/static/media/hugging_face_icon.680c5d04be8df645a376.png",
     "static/media/cloud_of_pos_words.png": "/static/media/cloud_of_pos_words.ac3d6d874f1ccae5339b.png",
     "static/media/homepage_fmdb.png": "/static/media/homepage_fmdb.b45a89f3809336871686.png",
-    "static/media/profile_picture.jpg": "/static/media/profile_picture.21568dbdc0ab1daf4e6e.jpg",
     "static/media/AALP.png": "/static/media/AALP.1ffa7ce68205effc64c1.png",
+    "static/media/profile_picture.jpg": "/static/media/profile_picture.c907d4a28475158d1cf6.jpg",
     "static/media/sql_pie_chart.png": "/static/media/sql_pie_chart.3923b3e4ad4d014a230a.png",
     "static/media/travel_reco.png": "/static/media/travel_reco.cf679505f1fd22f2d720.png",
     "static/media/gin_rummy.png": "/static/media/gin_rummy.cae79e11a494a7936346.png",
     "static/media/confusion_matrix_fraud.png": "/static/media/confusion_matrix_fraud.26cece341ba46844b84a.png",
     "index.html": "/index.html",
     "main.489dfdbf.css.map": "/static/css/main.489dfdbf.css.map",
-    "main.2117e06c.js.map": "/static/js/main.2117e06c.js.map",
+    "main.15a10b4d.js.map": "/static/js/main.15a10b4d.js.map",
     "787.c53aefa4.chunk.js.map": "/static/js/787.c53aefa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.489dfdbf.css",
-    "static/js/main.2117e06c.js"
+    "static/js/main.15a10b4d.js"
   ]
 }
