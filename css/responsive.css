@@ -1,0 +1,852 @@
+/* ================================
+   RESPONSIVE PORTFOLIO
+   Mobile-only adjustments - Desktop stays UNCHANGED
+   
+   This file uses CSS Grid & Flexbox (the modern standard)
+   No framework needed - this IS the best practice approach
+   ================================ */
+
+/* ================================
+   GLOBAL: Prevent horizontal scrolling
+   ================================ */
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Ensure content doesn't overflow */
+.content-wrapper,
+.full-section,
+.bento-grid,
+.projects-grid,
+.skills-bento,
+.contact-content {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ================================
+   MOBILE MENU BUTTON (Hidden on desktop)
+   ================================ */
+
+.mobile-menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    background: rgba(8, 8, 16, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 10px;
+    color: var(--color-primary-light);
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: none; /* Hidden by default - shown on mobile */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-menu-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: none; /* Hidden by default */
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ================================
+   TABLET STYLES (max-width: 900px)
+   Navigation changes, grids become 2-column
+   ================================ */
+
+@media (max-width: 900px) {
+    /* Show mobile menu elements */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-menu-overlay {
+        display: block;
+    }
+    
+    /* Side Navigation - slide out panel */
+    .side-nav {
+        width: 220px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .side-nav.mobile-open {
+        transform: translateX(0);
+    }
+    
+    /* Content takes full width */
+    .content-wrapper {
+        margin-left: 0;
+    }
+    
+    /* Sections padding */
+    .full-section {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    /* Hero adjustments */
+    .hero-section {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-container {
+        padding: 0 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .hero-title .greeting {
+        font-size: 1.1rem;
+    }
+    
+    .hero-title .name-highlight {
+        font-size: 2.25rem;
+    }
+    
+    .profile-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Bento grid - 2 columns with better spacing */
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .card-full {
+        grid-column: span 2;
+    }
+    
+    .card-large {
+        grid-column: span 2;
+    }
+    
+    .card-medium {
+        grid-column: span 1;
+    }
+    
+    .terminal-education-grid {
+        grid-column: span 2;
+    }
+    
+    .bento-card {
+        padding: 1.5rem;
+    }
+    
+    /* Projects grid - 2 columns */
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+    }
+    
+    .project-featured {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+    
+    .project-featured .project-image {
+        height: 250px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    /* Skills - stack to single column */
+    .skills-bento {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Contact - stack */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Fix terminal height on tablet */
+    .terminal-content-education {
+        height: 300px !important;
+        min-height: 300px !important;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* ================================
+   MOBILE STYLES (max-width: 600px)
+   Single column, compact spacing
+   ================================ */
+
+@media (max-width: 600px) {
+    /* Larger touch target */
+    .mobile-menu-toggle {
+        width: 48px;
+        height: 48px;
+    }
+    
+    /* Sections - increased vertical spacing */
+    .full-section {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    
+    /* Hero */
+    .hero-section {
+        padding: 4rem 1rem 2.5rem;
+        min-height: auto;
+    }
+    
+    .hero-container {
+        gap: 1.75rem;
+        padding: 0 0.5rem 1.5rem;
+    }
+    
+    .profile-wrapper {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .hero-title .greeting {
+        font-size: 1rem;
+    }
+    
+    .hero-title .name-highlight {
+        font-size: 2rem;
+    }
+    
+    .gradient-text {
+        font-size: 1.25rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+        min-width: unset;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    .floating-icon {
+        font-size: 1.25rem;
+        opacity: 0.3;
+    }
+    
+    /* Section headers - more spacing */
+    .section-header {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    /* Bento grid - single column with better spacing */
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .card-full,
+    .card-large,
+    .card-medium,
+    .terminal-education-grid {
+        grid-column: span 1;
+    }
+    
+    .bento-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+    
+    .bento-card h3 {
+        margin-bottom: 1rem;
+    }
+    
+    /* Fix terminal height on mobile */
+    .terminal-content-education {
+        height: 300px !important;
+        min-height: 300px !important;
+        padding: 1.25rem;
+    }
+    
+    .bento-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Timeline - better spacing */
+    .timeline {
+        gap: 1.5rem;
+    }
+    
+    .timeline-item {
+        gap: 1rem;
+    }
+    
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+        margin-top: 4px;
+    }
+    
+    .timeline-item:not(:last-child)::after {
+        left: 7px;
+    }
+    
+    .timeline-content strong {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    
+    .timeline-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .timeline-meta {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .timeline-status {
+        font-size: 0.625rem;
+        padding: 0.125rem 0.5rem;
+    }
+    
+    /* Awards - better spacing */
+    .awards-list {
+        gap: 1rem;
+    }
+    
+    .award-item {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .award-item i {
+        font-size: 1.5rem;
+        min-width: 1.75rem;
+    }
+    
+    .award-item strong {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    
+    .award-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Terminal education */
+    .terminal-content-education {
+        height: auto;
+        min-height: 220px;
+        padding: 1.25rem;
+        font-size: 0.8rem;
+    }
+    
+    .prompt-education {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Certifications - better spacing */
+    .certifications-list {
+        gap: 1.25rem;
+    }
+    
+    .cert-item {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .cert-item > i:first-child {
+        font-size: 1.75rem;
+        min-width: 2rem;
+    }
+    
+    .cert-item strong {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    
+    /* Projects section - better spacing */
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-featured {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 200px;
+        min-height: 200px;
+    }
+    
+    .project-featured .project-image {
+        height: 220px;
+        min-height: 220px;
+    }
+    
+    .project-content {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+        line-height: 1.3;
+        margin-bottom: 0.25rem;
+    }
+    
+    .project-description {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    .project-tech {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+    
+    .tech-pill {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.7rem;
+    }
+    
+    .view-more {
+        margin-top: 1.25rem;
+    }
+    
+    .view-more .btn {
+        width: 100%;
+    }
+    
+    /* Tech scroll section */
+    .tech-scroll-section {
+        padding: 2rem 1rem;
+    }
+    
+    .tech-scroll-item {
+        min-width: 100px;
+        padding: 1rem 0.75rem;
+    }
+    
+    .tech-scroll-icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tech-scroll-item span {
+        font-size: 0.7rem;
+    }
+    
+    /* Skills/Languages section - better spacing */
+    .skills-section {
+        padding: 2rem 1rem;
+    }
+    
+    .skills-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skills-card-header {
+        margin-bottom: 1.25rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .skills-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+        min-width: 44px;
+    }
+    
+    .skills-card-header h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+    
+    .programming-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .prog-item {
+        padding: 0.875rem 0.5rem;
+        min-height: 85px;
+        border-radius: 8px;
+    }
+    
+    .prog-item .prog-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .prog-name {
+        font-size: 0.65rem;
+        line-height: 1.2;
+    }
+    
+    .spoken-languages {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .lang-card {
+        padding: 1rem;
+        min-height: 110px;
+        border-radius: 8px;
+    }
+    
+    .lang-card-flag {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .lang-card-greeting {
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+    
+    .lang-card-name {
+        font-size: 0.7rem;
+        margin-top: 0.25rem;
+    }
+    
+    .lang-card-badge {
+        font-size: 0.55rem;
+        padding: 3px 8px;
+        margin-top: 0.5rem;
+    }
+    
+    /* Contact section - better spacing */
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+    
+    .contact-info .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-methods {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-method {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .method-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+        min-width: 44px;
+    }
+    
+    .method-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .method-value {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+    
+    .contact-form-wrapper {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .contact-form {
+        gap: 1rem;
+    }
+    
+    .form-group label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.875rem;
+        font-size: 0.95rem;
+        border-radius: 6px;
+    }
+    
+    .form-group textarea {
+        min-height: 120px;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+        min-width: unset;
+        border-radius: 6px;
+    }
+    
+    /* Footer - better spacing */
+    .footer {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+    }
+    
+    .footer p {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    .footer-note {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    
+    /* Background - reduce for performance */
+    .gradient-orb {
+        filter: blur(60px);
+        opacity: 0.06;
+    }
+    
+    .orb-1 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .orb-2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .orb-3 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .grid-bg {
+        background-size: 40px 40px;
+        opacity: 0.4;
+    }
+}
+
+/* ================================
+   EXTRA SMALL PHONES (max-width: 360px)
+   ================================ */
+
+@media (max-width: 360px) {
+    .full-section {
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .hero-title .name-highlight {
+        font-size: 1.75rem;
+    }
+    
+    .gradient-text {
+        font-size: 1.125rem;
+    }
+    
+    .profile-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .bento-card {
+        padding: 1rem;
+    }
+    
+    .programming-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.375rem;
+    }
+    
+    .prog-item {
+        padding: 0.5rem;
+        min-height: 60px;
+    }
+    
+    .prog-item .prog-icon {
+        font-size: 1rem;
+    }
+    
+    .prog-name {
+        font-size: 0.5rem;
+    }
+    
+    .lang-card {
+        min-height: 80px;
+    }
+}
+
+/* ================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    .project-card:hover,
+    .bento-card:hover,
+    .skills-card:hover,
+    .btn:hover {
+        transform: none;
+    }
+    
+    .touch-device .touch-active {
+        opacity: 0.85;
+    }
+    
+    .project-overlay {
+        display: none;
+    }
+}
+
+/* ================================
+   REDUCED MOTION
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .floating-icon,
+    .gradient-orb,
+    .tech-scroll-track,
+    .scroll-line {
+        animation: none;
+    }
+}
+
+/* ================================
+   SAFE AREA (Notched Phones)
+   ================================ */
+
+@supports (padding: max(0px)) {
+    @media (max-width: 900px) {
+        .mobile-menu-toggle {
+            left: max(1rem, env(safe-area-inset-left));
+            top: max(1rem, env(safe-area-inset-top));
+        }
+        
+        .full-section {
+            padding-left: max(1rem, env(safe-area-inset-left));
+            padding-right: max(1rem, env(safe-area-inset-right));
+        }
+        
+        .footer {
+            padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+        }
+    }
+}
+
+/* ================================
+   PRINT
+   ================================ */
+
+@media print {
+    .side-nav,
+    .scroll-indicator,
+    .bg-effects,
+    .mobile-menu-toggle,
+    .mobile-menu-overlay,
+    .floating-icon,
+    .hero-bg-elements {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        margin-left: 0;
+    }
+    
+    .full-section {
+        min-height: auto;
+        page-break-inside: avoid;
+        padding: 1rem;
+    }
+    
+    * {
+        color: #000 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+}

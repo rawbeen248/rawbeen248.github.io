@@ -1,1 +1,891 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Rabindra Adhikari</title><script defer="defer" src="/static/js/main.25c861b8.js"></script><link href="/static/css/main.489dfdbf.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#030308">
+    <meta name="color-scheme" content="dark">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rabindra Adhikari - AI Research Engineer specializing in LLMs, RAG systems, and production-ready AI applications. Explore my portfolio of machine learning projects.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, LLM, RAG, Python, Data Science, Portfolio">
+    <meta name="author" content="Rabindra Adhikari">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rabindra Adhikari - AI Research Engineer">
+    <meta property="og:description" content="AI Research Engineer specializing in LLMs, RAG systems, and production-ready AI applications.">
+    <meta property="og:url" content="https://rawbeen248.github.io/">
+    <meta property="og:image" content="assets/profile_picture.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rabindra Adhikari - AI Research Engineer">
+    <meta name="twitter:description" content="AI Research Engineer specializing in LLMs, RAG systems, and production-ready AI applications.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/profile_picture.png">
+    <link rel="apple-touch-icon" href="assets/profile_picture.png">
+    
+    <title>Rabindra Adhikari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <!-- SIDE NAVIGATION -->
+    <nav class="side-nav">
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active" data-section="hero">
+                <div class="link-icon"><i class="fas fa-home"></i></div>
+                <span class="link-text">Home</span>
+            </a></li>
+            <li><a href="#about" class="nav-link" data-section="about">
+                <div class="link-icon"><i class="fas fa-user"></i></div>
+                <span class="link-text">About</span>
+            </a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">
+                <div class="link-icon"><i class="fas fa-briefcase"></i></div>
+                <span class="link-text">Projects</span>
+            </a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">
+                <div class="link-icon"><i class="fas fa-code"></i></div>
+                <span class="link-text">Skills</span>
+            </a></li>
+            <li><a href="https://drive.google.com/file/d/1xKuK56qy2FTDpAQCO7_79z2VdFhiV-ye/view" class="nav-link" target="_blank" rel="noopener noreferrer">
+                <div class="link-icon"><i class="fas fa-file-alt"></i></div>
+                <span class="link-text">Resume</span>
+            </a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">
+                <div class="link-icon"><i class="fas fa-envelope"></i></div>
+                <span class="link-text">Contact</span>
+            </a></li>
+        </ul>
+        
+        <div class="nav-footer">
+            <a href="https://github.com/rawbeen248" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rabindra-adhikari/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main class="content-wrapper">
+        
+        <!-- HERO SECTION - Full Screen -->
+        <section id="hero" class="full-section hero-section">
+            <div class="hero-container">
+                <!-- Profile Image -->
+                <div class="hero-profile">
+                    <div class="profile-wrapper">
+                        <img src="assets/profile_picture.png" alt="Rabindra Adhikari" onerror="this.src='https://ui-avatars.com/api/?name=Rabindra+Adhikari&size=400&background=6366f1&color=fff&font-size=0.4'">
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello World, I'm</span>
+                        <span class="name-highlight">Rabindra Adhikari</span>
+                    </h1>
+                    <h2 class="hero-role">
+                        <span class="gradient-text">AI Research Engineer</span>
+                    </h2>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION - Bento Grid Layout -->
+        <section id="about" class="full-section about-section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Row 1: Who I Am (Full Width) -->
+                <div class="bento-card card-full card-bio">
+                    <div class="card-content">
+                        <p>
+                            <strong>AI Research Engineer</strong> at Nepal Clearing House Limited, specializing in 
+                            <strong>LLMs</strong>, <strong>RAG systems</strong>, and <strong>data-driven AI solutions</strong>. 
+                            Passionate about fine-tuning models and building production-ready AI applications 
+                            that solve real-world challenges.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Row 2: Experience (2 cols) + Recognitions (1 col) -->
+                <div class="bento-card card-large card-timeline">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title-row">
+                                    <strong>Research Engineer</strong>
+                                    <span class="timeline-status current">Current</span>
+                                </div>
+                                <span>Nepal Clearing House Limited</span>
+                                <div class="timeline-meta">
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</span>
+                                    <span class="timeline-year">February 2025 - Present</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title-row">
+                                    <strong>AI Data Annotator</strong>
+                                    <span class="timeline-status completed">Completed</span>
+                                </div>
+                                <span>Data Annotation Tech</span>
+                                <div class="timeline-meta">
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Madrid, Spain</span>
+                                    <span class="timeline-year">February 2024 - January 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title-row">
+                                    <strong>Data Analyst Intern</strong>
+                                    <span class="timeline-status completed">Completed</span>
+                                </div>
+                                <span>Infinity Services Private Limited</span>
+                                <div class="timeline-meta">
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</span>
+                                    <span class="timeline-year">May 2023 - October 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-title-row">
+                                    <strong>Database Solutions Consultant Intern</strong>
+                                    <span class="timeline-status completed">Completed</span>
+                                </div>
+                                <span>Black Snow Nepal</span>
+                                <div class="timeline-meta">
+                                    <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</span>
+                                    <span class="timeline-year">June 2022 - August 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card card-medium card-awards">
+                    <h3>Recognitions</h3>
+                    <div class="awards-list">
+                        <div class="award-item">
+                            <i class="fas fa-trophy" style="color: #FFD700;"></i>
+                            <div>
+                                <strong>IE-Parents Young Talented Leaders Scholarship</strong>
+                                <span>Full-Ride Undergraduate Scholarship</span>
+                                <div class="award-meta">
+                                    <small><i class="fas fa-calendar"></i> 2020 - 2024</small>
+                                    <small><i class="fas fa-map-marker-alt"></i> IE University</small>
+                                    <small><i class="fas fa-award"></i> Academic Excellence</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <i class="fas fa-crown" style="color: #FFD700;"></i>
+                            <div>
+                                <strong>Datathon Winner</strong>
+                                <span>IE University & Ryanair Competition</span>
+                                <div class="award-meta">
+                                    <small><i class="fas fa-calendar"></i> October 2022</small>
+                                    <small><i class="fas fa-map-marker-alt"></i> Madrid, Spain</small>
+                                    <small><i class="fas fa-award"></i> Competition</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <i class="fas fa-medal" style="color: #FFD700;"></i>
+                            <div>
+                                <strong>Ullens Excellence Award</strong>
+                                <span>IB Diploma Program Scholarship</span>
+                                <div class="award-meta">
+                                    <small><i class="fas fa-calendar"></i> 2018 - 2020</small>
+                                    <small><i class="fas fa-map-marker-alt"></i> Ullens School</small>
+                                    <small><i class="fas fa-award"></i> Academic Merit</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3: Education (Large) + Certifications (Medium) -->
+                <div class="terminal-education terminal-education-grid">
+                    <div class="terminal-header-education">
+                        <div class="terminal-button-education bg-red-500"></div>
+                        <div class="terminal-button-education bg-yellow-500"></div>
+                        <div class="terminal-button-education bg-green-500"></div>
+                        <div class="text-sm ml-3 text-gray-400">education.sh</div>
+                    </div>
+                    <div class="terminal-content-education">
+                        <div class="mb-4">
+                            <div class="command-line-education">
+                                <span class="prompt-education">user@portfolio:~$</span>
+                                <span class="typing-text-education">cat education.txt</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-output-education" id="output-container-education">
+                        </div>
+                        
+                        <div class="command-line-education mt-4">
+                            <span class="prompt-education">user@portfolio:~$</span>
+                            <span class="cursor-education"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card card-medium card-certifications">
+                    <h3>Certifications</h3>
+                    <div class="certifications-list">
+                        <a href="https://www.freecodecamp.org/certification/fcc243a4501-d777-4156-80c3-f9c87c876da6/machine-learning-with-python-v7" target="_blank" class="cert-item">
+                            <i class="fab fa-python" style="color: #3776AB; font-size: 2rem;"></i>
+                            <div class="cert-content">
+                                <strong>Data Analysis with Python</strong>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link-icon"></i>
+                        </a>
+                        <a href="https://www.freecodecamp.org/certification/fcc243a4501-d777-4156-80c3-f9c87c876da6/javascript-algorithms-and-data-structures" target="_blank" class="cert-item">
+                            <i class="fab fa-js-square" style="color: #F7DF1E; font-size: 2rem;"></i>
+                            <div class="cert-content">
+                                <strong>JavaScript Algorithms and Data Structures</strong>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <i class="fas fa-external-link-alt cert-link-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION - Asymmetric Grid -->
+        <section id="projects" class="full-section projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Featured Project - Large -->
+                <article class="project-card project-featured" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7212179230141386752/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/AALP.png" alt="Advanced Automated Lecture Processing" onerror="this.src='https://via.placeholder.com/1200x800/6366f1/ffffff?text=AALP+Project'">
+                        <div class="project-overlay">
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7212179230141386752/" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badges">
+                            <span class="badge badge-featured">Featured</span>
+                        </div>
+                        <h3 class="project-title">Advanced Automated Lecture Processing (AALP)</h3>
+                        <p class="project-description">
+                            Developed an advanced tool leveraging state-of-the-art ML models for automated video 
+                            summarization and interactive learning. Features ASR, machine translation, content generation, 
+                            and video summarization using transformer models.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">FastAPI</span>
+                            <span class="tech-pill">Transformers</span>
+                            <span class="tech-pill">Hugging Face</span>
+                            <span class="tech-pill">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Projects -->
+                <article class="project-card" onclick="window.open('https://huggingface.co/ardneebwar/mistral_7b_mcq_generator', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/mcq_quiz.png" alt="MCQ Generator" onerror="this.src='https://via.placeholder.com/1200x800/8b5cf6/ffffff?text=MCQ+Generator'">
+                        <div class="project-overlay">
+                            <a href="https://huggingface.co/ardneebwar/mistral_7b_mcq_generator" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mistral 7B MCQ Generator</h3>
+                        <p class="project-description">
+                            Fine-tuned Mistral 7B for generating multiple-choice questions with answers. 
+                            Perfect for educators and e-learning content creators using parameter-efficient fine-tuning.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Transformers</span>
+                            <span class="tech-pill">PEFT</span>
+                            <span class="tech-pill">Hugging Face</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://huggingface.co/ardneebwar/wav2vec2-animal-sounds-finetuned-hubert-finetuned-animals', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/audio_classification.png" alt="Animal Sound Classifier" onerror="this.src='https://via.placeholder.com/1200x800/f59e0b/ffffff?text=Audio+Classification'">
+                        <div class="project-overlay">
+                            <a href="https://huggingface.co/ardneebwar/wav2vec2-animal-sounds-finetuned-hubert-finetuned-animals" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Animal Sound Classifier</h3>
+                        <p class="project-description">
+                            Fine-tuned HuBERT model for animal sound classification using ESC-50 dataset. 
+                            Demonstrates expertise in audio processing and transfer learning.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Transformers</span>
+                            <span class="tech-pill">Librosa</span>
+                            <span class="tech-pill">Torch</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://github.com/rawbeen248/bayesian-network-news-credibility', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/bayesian_network.png" alt="News Credibility Assessment" onerror="this.src='https://via.placeholder.com/1200x800/10b981/ffffff?text=Bayesian+Network'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rawbeen248/bayesian-network-news-credibility" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">News Credibility Assessment</h3>
+                        <p class="project-description">
+                            Bayesian Network for assessing news statement credibility. Captures probabilistic 
+                            relationships among features influencing news credibility.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">PGMPY</span>
+                            <span class="tech-pill">NLP</span>
+                            <span class="tech-pill">Netica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://github.com/rawbeen248/full-package-travel-recommendation-system', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/travel_reco.png" alt="Travel Recommendation" onerror="this.src='https://via.placeholder.com/1200x800/ef4444/ffffff?text=Travel+System'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rawbeen248/full-package-travel-recommendation-system" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Travel Recommendation System</h3>
+                        <p class="project-description">
+                            Full-package travel recommendation system with hybrid filtering. Recommends destinations, 
+                            hotels, restaurants, and activities based on user preferences.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Gradio</span>
+                            <span class="tech-pill">Scikit-learn</span>
+                            <span class="tech-pill">NLP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://github.com/rawbeen248/paw-pal', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/pawpal_home_screen.png" alt="PawPal App" onerror="this.src='https://via.placeholder.com/1200x800/3b82f6/ffffff?text=PawPal+App'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rawbeen248/paw-pal" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PawPal: Pet Marketplace App</h3>
+                        <p class="project-description">
+                            Mobile application for buying and selling pets with community features. 
+                            Full-stack development with React and Firebase backend.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Firebase</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://github.com/rawbeen248/object-recognition-for-visually-challenged', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/yolo.png" alt="Object Recognition" onerror="this.src='https://via.placeholder.com/1200x800/ec4899/ffffff?text=Object+Recognition'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rawbeen248/object-recognition-for-visually-challenged" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Object Recognition for Visually Challenged</h3>
+                        <p class="project-description">
+                            Computer vision system using YOLOv8 to help visually challenged individuals detect 
+                            and recognize surroundings with text-to-speech output.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">YOLOv8</span>
+                            <span class="tech-pill">OpenCV</span>
+                            <span class="tech-pill">pyttsx3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" onclick="window.open('https://github.com/rawbeen248/Gin-Rummy-AI-vs-Human', '_blank')" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/gin_rummy.png" alt="Gin Rummy Bot" onerror="this.src='https://via.placeholder.com/1200x800/06b6d4/ffffff?text=Gin+Rummy+Bot'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rawbeen248/Gin-Rummy-AI-vs-Human" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gin Rummy Bot</h3>
+                        <p class="project-description">
+                            Fully-featured implementation of the classic card game, Gin Rummy, in an interactive console environment. 
+                            Integrates essential game elements with a strategically competent AI bot as opponent.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">AI</span>
+                            <span class="tech-pill">Game Development</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-more">
+                <a href="https://github.com/rawbeen248" target="_blank" class="btn btn-outline">
+                    <span>View All Projects on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TECH STACK INFINITE SCROLL -->
+        <section id="skills" class="full-section tech-scroll-section">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="tech-scroll-wrapper">
+                <div class="tech-scroll-track">
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-microsoft" style="color: #007ACC;"></i></div>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-python" style="color: #3776AB;"></i></div>
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-git-alt" style="color: #F05032;"></i></div>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-react" style="color: #61DAFB;"></i></div>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-database" style="color: #00758F;"></i></div>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-docker" style="color: #2496ED;"></i></div>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-unity" style="color: #FFFFFF;"></i></div>
+                        <span>Unity</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-aws" style="color: #FF9900;"></i></div>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-line" style="color: #F2C811;"></i></div>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-bar" style="color: #E97627;"></i></div>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-flask" style="color: #FF6C37;"></i></div>
+                        <span>Postman</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-github" style="color: #FFFFFF;"></i></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-fire" style="color: #FF6F00;"></i></div>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-brain" style="color: #FF6F00;"></i></div>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-cogs" style="color: #F7931E;"></i></div>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-layer-group" style="color: #D00000;"></i></div>
+                        <span>Keras</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-bolt" style="color: #E25A1C;"></i></div>
+                        <span>PySpark</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-database" style="color: #DC382D;"></i></div>
+                        <span>Redis</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-flask" style="color: #0194E2;"></i></div>
+                        <span>MLflow</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-line" style="color: #FFCC33;"></i></div>
+                        <span>W&B</span>
+                    </div>
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-microsoft" style="color: #007ACC;"></i></div>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-python" style="color: #3776AB;"></i></div>
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-git-alt" style="color: #F05032;"></i></div>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-react" style="color: #61DAFB;"></i></div>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-database" style="color: #00758F;"></i></div>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-docker" style="color: #2496ED;"></i></div>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-unity" style="color: #FFFFFF;"></i></div>
+                        <span>Unity</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-aws" style="color: #FF9900;"></i></div>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-line" style="color: #F2C811;"></i></div>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-bar" style="color: #E97627;"></i></div>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-flask" style="color: #FF6C37;"></i></div>
+                        <span>Postman</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fab fa-github" style="color: #FFFFFF;"></i></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-fire" style="color: #FF6F00;"></i></div>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-brain" style="color: #FF6F00;"></i></div>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-cogs" style="color: #F7931E;"></i></div>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-layer-group" style="color: #D00000;"></i></div>
+                        <span>Keras</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-bolt" style="color: #E25A1C;"></i></div>
+                        <span>PySpark</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-database" style="color: #DC382D;"></i></div>
+                        <span>Redis</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-flask" style="color: #0194E2;"></i></div>
+                        <span>MLflow</span>
+                    </div>
+                    <div class="tech-scroll-item">
+                        <div class="tech-scroll-icon"><i class="fas fa-chart-line" style="color: #FFCC33;"></i></div>
+                        <span>W&B</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES SECTION -->
+        <section id="languages" class="full-section skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Languages</h2>
+            </div>
+
+            <div class="skills-bento">
+                <!-- Programming Languages Card -->
+                <div class="skills-card programming-card">
+                    <div class="skills-card-header">
+                        <div class="skills-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="programming-grid">
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-python" style="color: #3776AB;"></i></div>
+                            <span class="prog-name">Python</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-js-square" style="color: #F7DF1E;"></i></div>
+                            <span class="prog-name">JavaScript</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fas fa-database" style="color: #336791;"></i></div>
+                            <span class="prog-name">SQL</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-java" style="color: #ED8B00;"></i></div>
+                            <span class="prog-name">Java</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-r-project" style="color: #276DC3;"></i></div>
+                            <span class="prog-name">R</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fas fa-code" style="color: #00599C;"></i></div>
+                            <span class="prog-name">C++</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-html5" style="color: #E34F26;"></i></div>
+                            <span class="prog-name">HTML</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-css3-alt" style="color: #1572B6;"></i></div>
+                            <span class="prog-name">CSS</span>
+                        </div>
+                        <div class="prog-item">
+                            <div class="prog-icon"><i class="fab fa-php" style="color: #777BB4;"></i></div>
+                            <span class="prog-name">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spoken Languages Card -->
+                <div class="skills-card languages-card">
+                    <div class="skills-card-header">
+                        <div class="skills-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Spoken Languages</h3>
+                    </div>
+                    <div class="spoken-languages">
+                        <div class="lang-card native">
+                            <div class="lang-card-flag">🇳🇵</div>
+                            <div class="lang-card-content">
+                                <span class="lang-card-greeting">नमस्ते</span>
+                                <span class="lang-card-name">Nepali</span>
+                            </div>
+                            <span class="lang-card-badge">Native</span>
+                        </div>
+                        <div class="lang-card fluent">
+                            <div class="lang-card-flag">🇺🇸</div>
+                            <div class="lang-card-content">
+                                <span class="lang-card-greeting">Hello</span>
+                                <span class="lang-card-name">English</span>
+                            </div>
+                            <span class="lang-card-badge">Fluent</span>
+                        </div>
+                        <div class="lang-card fluent">
+                            <div class="lang-card-flag">🇮🇳</div>
+                            <div class="lang-card-content">
+                                <span class="lang-card-greeting">नमस्ते</span>
+                                <span class="lang-card-name">Hindi</span>
+                            </div>
+                            <span class="lang-card-badge">Fluent</span>
+                        </div>
+                        <div class="lang-card intermediate">
+                            <div class="lang-card-flag">🇪🇸</div>
+                            <div class="lang-card-content">
+                                <span class="lang-card-greeting">¡Hola!</span>
+                                <span class="lang-card-name">Spanish</span>
+                            </div>
+                            <span class="lang-card-badge">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION - Minimal & Clean -->
+        <section id="contact" class="full-section contact-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-description">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:rawbeendraw.248@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">rawbeendraw.248@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rabindra-adhikari/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">linkedin.com/in/rabindra-adhikari</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/rawbeen248" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">github.com/rawbeen248</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/ard_neeb_war/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Instagram</span>
+                                <span class="method-value">@ard_neeb_war</span>
+                            </div>
+                        </a>
+
+                        <a href="https://huggingface.co/ardneebwar" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Hugging Face</span>
+                                <span class="method-value">huggingface.co/ardneebwar</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <!-- 
+                        TO ACTIVATE EMAIL:
+                        1. Go to https://formspree.io and sign up with your email
+                        2. Create a new form
+                        3. Replace YOUR_FORM_ID below with your actual form ID (e.g., xyzabc123)
+                    -->
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzznaprg" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="First Last" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="grid-bg"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <!-- Floating Animation Icons - Dynamically Generated -->
+        <div id="floating-icons-container"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
