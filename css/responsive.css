@@ -217,6 +217,81 @@ html, body {
         height: 48px;
     }
     
+    /* Mobile Navigation - optimized for small screens */
+    .side-nav {
+        width: 200px;
+        padding: 1rem 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+        padding: 0 0.75rem;
+    }
+    
+    .nav-link {
+        padding: 0.625rem 0.5rem;
+        gap: 0.25rem;
+    }
+    
+    .nav-link .link-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.95rem;
+    }
+    
+    .nav-link .link-text {
+        font-size: 0.5rem;
+    }
+    
+    .nav-link.active::before {
+        left: -12px;
+        height: 20px;
+    }
+    
+    .nav-footer {
+        margin-top: 0.75rem;
+        padding: 0.75rem 0 0;
+        border-top: 1px solid rgba(0, 212, 255, 0.1);
+        gap: 0.5rem;
+    }
+    
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.95rem;
+    }
+    
+    /* Mobile nav close button inside nav */
+    .side-nav::before {
+        content: '\f00d';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-text-muted);
+        font-size: 1.25rem;
+        background: rgba(0, 212, 255, 0.1);
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .side-nav.mobile-open::before {
+        opacity: 1;
+        pointer-events: all;
+    }
+    
     /* Sections - increased vertical spacing */
     .full-section {
         padding: 2rem 1rem;
@@ -284,11 +359,19 @@ html, body {
         line-height: 1.3;
     }
     
+    /* About section - prevent all scrolling */
+    .about-section {
+        overflow: visible !important;
+        height: auto !important;
+    }
+    
     /* Bento grid - single column with better spacing */
     .bento-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding-bottom: 1.5rem;
+        overflow: visible !important;
+        height: auto !important;
     }
     
     .card-full,
@@ -301,17 +384,25 @@ html, body {
     .bento-card {
         padding: 1.5rem;
         border-radius: 12px;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+    
+    .bento-card.terminal-education-grid {
+        overflow: hidden;
     }
     
     .bento-card h3 {
         margin-bottom: 1rem;
     }
     
-    /* Fix terminal height on mobile */
-    .terminal-content-education {
-        height: 300px !important;
-        min-height: 300px !important;
-        padding: 1.25rem;
+    .timeline,
+    .awards-list,
+    .certifications-list {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
     
     .bento-card h3 {
@@ -388,11 +479,22 @@ html, body {
     }
     
     /* Terminal education */
+    .terminal-education-grid {
+        overflow: hidden;
+    }
+    
     .terminal-content-education {
-        height: auto;
-        min-height: 220px;
+        min-height: 350px !important;
         padding: 1.25rem;
         font-size: 0.8rem;
+        overflow: hidden !important;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .command-output-education {
+        flex: 1;
+        overflow: hidden !important;
     }
     
     .prompt-education {

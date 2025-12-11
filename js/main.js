@@ -265,6 +265,18 @@ function initMobileMenu() {
     
     overlay.addEventListener('click', closeMenu);
     
+    // Close menu when clicking the top-right area (close button)
+    sideNav.addEventListener('click', (e) => {
+        const rect = sideNav.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const clickY = e.clientY - rect.top;
+        
+        // Check if click is in top-right corner (close button area)
+        if (clickX > rect.width - 60 && clickY < 60) {
+            closeMenu();
+        }
+    });
+    
     // Close menu when clicking nav links
     sideNav.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
