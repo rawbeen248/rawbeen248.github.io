@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initEducationTerminal();
     initSkillsAnimation();
     initFloatingIcons();
+    initTwemoji();
 });
 
 // Detect touch device
@@ -713,6 +714,19 @@ function initFloatingIcons() {
             placedIcons.push({ x, y });
             i++;
         }
+    }
+}
+
+// ================================
+// TWEMOJI INITIALIZATION
+// ================================
+
+function initTwemoji() {
+    if (typeof twemoji !== 'undefined') {
+        twemoji.parse(document.body, {
+            folder: 'svg',
+            ext: '.svg'
+        });
     }
 }
 
