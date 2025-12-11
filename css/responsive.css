@@ -265,35 +265,6 @@ html, body {
         font-size: 0.95rem;
     }
     
-    /* Mobile nav close button inside nav */
-    .side-nav::before {
-        content: '\f00d';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-text-muted);
-        font-size: 1.25rem;
-        background: rgba(0, 212, 255, 0.1);
-        border-radius: 6px;
-        cursor: pointer;
-        z-index: 10;
-        transition: all 0.3s ease;
-        opacity: 0;
-        pointer-events: none;
-    }
-    
-    .side-nav.mobile-open::before {
-        opacity: 1;
-        pointer-events: all;
-    }
-    
     /* Sections - increased vertical spacing */
     .full-section {
         padding: 2rem 1rem;
